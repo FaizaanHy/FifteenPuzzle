@@ -1,0 +1,81 @@
+Fifteen Puzzle 
+
+Team Members: Faizaan Hyath, Rebekah Aung, Asmat Ullah
+
+Project Summary: The "Fifteen Puzzle" is a sliding tile game involving 15 numbered tiles arranged in a 4x4 grid with one empty space. The user’s goal is to restore the tiles to their original sequence by sliding them into the blank space. Our project will implement this game using HTML, CSS, JavaScript, PHP, and MySQL to support the functionality of the game.
+
+Proposed Wireframe:
+The homepage displays a stylized Fifteen Puzzle board with a random background image and a “Shuffle” button.
+The board contains 15 movable tiles and one blank space.
+When the game is solved, a notification is displayed on the screen.
+Admin page (optional) provides tools for managing user accounts and background images.
+
+Homepage Details:
+CSS-styled puzzle theme with modern visuals.
+Displays game title, background selector, and shuffle/start button.
+
+
+Layouts:
+CSS Grid for the tile layout (4x4).
+Responsive Flexbox wrapper around the game.
+
+Each Page Details:
+Index.html:
+Loads puzzle with default or randomly selected background.
+Includes shuffle button and background image selector.
+fifteen.js:
+JavaScript to handle tile creation, movement, highlight effects, win detection, and shuffling.
+Style.css:
+Applies hover styles, transition effects, and puzzle layout.
+Admin.php:
+Backend interface for managing users and background images using PHP and MySQL.
+Images.php:
+Returns background image options dynamically.
+
+Functionality:
+Validates whether a tile can move based on its position relative to the blank.
+- Updates tile positions as they are moved.
+
+Transition Implementation Details:
+Tile movements are animated using CSS transitions for smooth sliding.
+Page changes and image updates triggered using DOM event listeners.
+
+Transformations Implementation Details:
+Hoverable tiles have green text and red borders to indicate interactivity.
+Win notification includes transformed victory banner or visual cue.
+
+Animations Implementation Details:
+Smooth slide transition on tile move using transition
+CSS animations for victory notification 
+
+User Experience:
+Intuitive mouse-based controls with clear hover feedback.
+Background selection dropdown adds visual variety.
+Win message and visual effects
+
+Test Cases:
+Shuffle button clicked
+When the button is clicked, tiles are randomized
+Clicking tiles next to a blank
+Tiles slide into the blank spot when they are clicked
+Win condition
+A win message will appear on the screen when the puzzle is solved
+
+Approach to Refine Improvements:
+Incorporate user feedback to optimize the user interface and streamline the user experience. 
+Iterate on design elements based on usability testing results to ensure intuitive navigation and clear information presentation. 
+
+Proposed APIs (if any):
+Since the project is limited toHTML, CSS, JavaScript, PHP and MySQL, no external APIs are required or proposed.
+
+
+
+Statement: 
+We, the undersigned members of the group, acknowledge that we understand the conditions outlined in this proposal. We are committed to actively participating in the implementation of the group project from start to finish. We understand that individual grades may vary based on our contributions and performance, and we agree to present an important phase of the work collectively. 
+
+Signed proposal: 
+Name: Rebekah Aung
+Name: Faizaan Hyath 
+Name: Asmat Ullah
+
+This proposal outlines our plan to develop an interactive website that leverages CSS to create captivating user interfaces. We believe that this project aligns with the objectives of the web development class and offers an opportunity to explore CSS transformations, transitions, and animations in a practical setting. We are excited about the potential of this project and look forward to bringing our ideas to life. 
