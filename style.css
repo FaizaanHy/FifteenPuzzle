@@ -1,0 +1,234 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #eee;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Container for forms and admin content */
+.container {
+    background: #2c2a3a;
+    border-radius: 12px;
+    padding: 30px 40px;
+    box-shadow: 0 0 20px #8e44adcc;
+    width: 100%;
+    max-width: 900px;
+    box-sizing: border-box;
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    color: #f8f8f8;
+    text-shadow: 0 0 8px #a259ff;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 20px;
+}
+
+/* Labels */
+label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="file"] {
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 2px solid #444;
+    background: #1e1b2a;
+    color: #eee;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="file"]:focus {
+    outline: none;
+    border-color: #9b59b6;
+    box-shadow: 0 0 10px #9b59b6;
+}
+
+/* Buttons */
+button, input[type="submit"] {
+    background: linear-gradient(45deg, #8e44ad, #6f2dbd);
+    color: #fff;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    box-shadow:
+        0 0 10px #a259ff,
+        0 0 20px #a259ff,
+        0 0 40px #6f2dbd;
+    transition: background 0.4s ease, box-shadow 0.4s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background: linear-gradient(45deg, #b276ff, #8e44ad);
+    box-shadow:
+        0 0 20px #d3a0ff,
+        0 0 40px #d3a0ff,
+        0 0 60px #b276ff;
+}
+
+/* Error and message styles */
+.message, .error {
+    padding: 14px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.message {
+    background-color: #2ecc71;
+    color: #1b3611;
+    box-shadow: 0 0 15px #2ecc71aa;
+}
+
+.error {
+    background-color: #e74c3c;
+    color: #461b15;
+    box-shadow: 0 0 15px #e74c3caa;
+}
+
+/* Tables for admin */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #201e2f;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 20px #7d5fffaa;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #3c3a4e;
+    color: #ddd;
+    font-size: 0.95rem;
+}
+
+th {
+    background: #442f66;
+    text-shadow: 0 0 6px #b273ff;
+}
+
+tr:hover {
+    background-color: #3b3270cc;
+}
+
+/* Inline forms in tables */
+form.inline {
+    display: inline-block;
+    margin: 0;
+}
+
+form.inline input[type="text"],
+form.inline input[type="password"] {
+    width: 140px;
+    margin-right: 6px;
+}
+
+/* Checkboxes styling */
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    filter: drop-shadow(0 0 1px #a259ffcc);
+}
+
+/* Links */
+a {
+    color: #9b59b6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    form.inline input[type="text"],
+    form.inline input[type="password"] {
+        width: 100px;
+    }
+}
+
+.table-wrapper {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;;
+}
+
+.table-wrapper table {
+    width: auto;
+    min-width: 600px;
+}
+
+/* Make inputs stretch to fill their container */
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="file"],
+td input[type="text"],
+td input[type="password"] {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form.inline input[type="text"],
+form.inline input[type="password"] {
+  width: 200px; /* increase width */
+  margin-right: 8px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 75px; /* Adjust this value as needed */
+  font-weight: bold;
+  color: #9b59b6;
+}

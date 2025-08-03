@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fifteen Puzzle Game</title>
+  <link rel="stylesheet" href="fifteen.css" />
+</head>
+<body>
+  <h1>Fifteen Puzzle</h1>
+
+  <!-- Controls container above the puzzle -->
+  <div id="controls">
+    <button id="shufflebutton">Shuffle</button>
+
+    <label for="bg-select">Background:</label>
+    <select id="bg-select" name="bg-select">
+      <option value="background.jpg" selected>Nature</option>
+      <option value="bg2.jpg">City</option>
+      <option value="bg3.jpg">Desert</option>
+      <option value="bg4.jpg">Ocean</option>
+    </select>
+
+    <label for="size-select">Size:</label>
+    <select id="size-select" name="size-select">
+        <option value="3">3x3</option>
+      <option value="4" selected>4x4</option>
+        <option value="5">5x5</option>
+    </select>
+    <button id="solve-button">Solve Puzzle</button>
+
+  </div>
+
+  <!-- Puzzle container -->
+  <div id="puzzlearea"></div>
+
+    <p id="win-message"></p>
+
+  <p style="text-align: center; margin-top: 20px;">
+    <a href="login.php">Back to Login</a> |
+    <a href="leaderboard.php">View Leaderboard 🏆</a>
+  </p>
+
+  
+
+  <script src="fifteen.js"></script>
+  
+</body>
+</html>
